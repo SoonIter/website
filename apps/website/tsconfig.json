@@ -14,5 +14,5 @@
       "@components/*": ["./src/components/*"]
     }
   },
-  "include": ["src", "docs", "rspress.config.ts"]
+  "include": ["src", "docs", "theme", "env.d.ts", "rspress.config.ts"]
 }

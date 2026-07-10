@@ -1,4 +1,5 @@
 import { Layout as OriginalLayout } from "@rspress/core/theme-original";
+import { HomeLayout } from "./components/HomeLayout";
 import "./index.css";
 
 const Vercel = ({ height = 18 }: { height?: number }) => (
@@ -13,6 +14,7 @@ const Vercel = ({ height = 18 }: { height?: number }) => (
 export function Layout() {
   return (
     <OriginalLayout
+      HomeLayout={HomeLayout}
       bottom={
         <footer className="swc-footer">
           <a
@@ -29,4 +31,5 @@ export function Layout() {
   );
 }
 
+export { HomeLayout };
 export * from "@rspress/core/theme-original";
